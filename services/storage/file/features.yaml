@@ -1,0 +1,33 @@
+common_features:
+  - CCC.F01 # Encryption in Transit Enabled by Default
+  - CCC.F02 # Encryption at Rest Enabled by Default
+  - CCC.F03 # Access/Activity Logs
+  - CCC.F04 # Transaction Rate Limits
+  - CCC.F06 # Identity Based Access Control
+  - CCC.F07 # Event Notifications
+  - CCC.F08 # Multi-zone Deployment
+  - CCC.F09 # Monitoring
+  - CCC.F10 # Logging
+  - CCC.F11 # Backup
+  - CCC.F12 # Restore
+  - CCC.F14 # API Access
+  - CCC.F21 # Replication
+
+features:
+  - id: CCC.FileStor.F01 # Hierarchical structured file system
+    title: Hierarchical File Storage
+    description: |
+      Provides hierarchical directory and subdirectory structure which is similar to traditional file systems.
+  - id: CCC.FileStor.F02 # protocol support
+    title: Shared file system protocol support
+    description: |
+      Supports NFS (Network File System) and SMB (Server Message Block) protocols which are popular shared file system protocols.
+  - id: CCC.FileStor.F03 # POSIX Compliance
+    title: POSIX Compliance
+    description: |
+      Provides POSIX compliant file system which can be seamlessly used with traditional file based applications.
+  - id: CCC.FileStor.F09 # Object Modification Locks
+    title: Object Modification Locks
+    description: |
+      Allows locking of objects to disable modification and/or deletion of an
+      object for a defined period of time.
