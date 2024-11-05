@@ -1,0 +1,62 @@
+common_threats:
+  - CCC.TH01 # Unauthorized access through elevated privileges
+  - CCC.TH02 # Data is intercepted in transit
+  - CCC.TH03 # Deployment region network is untrusted
+  - CCC.TH04 # Data is replicated to untrusted or external locations
+  - CCC.TH05 # Data is corrupted during replication
+  - CCC.TH06 # Data is lost or corrupted
+  - CCC.TH07 # Logs are Tampered With or Deleted
+  - CCC.TH08 # Cost Management Data is Manipulated
+  - CCC.TH09 # Logs or Monitoring Data are Read by Unauthorized Users
+  - CCC.TH10 # Alerts are Intercepted
+  - CCC.TH11 # Event Notifications are Incorrectly Triggered
+  - CCC.TH12 # Resource constraints are exhausted
+  - CCC.TH13 # Resource Tags Are Manipulated
+  - CCC.TH14 # Older Resource Versions Are Exploited
+  - CCC.TH15 # Automated Enumeration and Reconnaissance by Non-Human Entities
+
+threats:
+  - id: CCC.FileStor.TH01
+    title: Data exfiltration or manipulation via insecure file system protocols
+    description: |
+      Traditional file system protocols like NFS (Network File System) and SMB
+      (Server Message Block) could have vulnerabilities that allow data to be
+      exfiltrated or destroyed prematurely, resulting in a loss of availability
+      and potential exposure of sensitive data.
+    features:
+      - CCC.F11 # Backup
+    mitre_technique:
+      - T1020 # Automated Exfiltration
+      - T1537 # Transfer Data to Cloud Account
+      - T1048 # Exfiltration Over Alternative Protocol
+      - T1485 # Data Destruction
+      - T1557 # Adversary-in-the-Middle
+      - T1135 # Network Share Discovery
+
+  - id: CCC.FileStor.TH02
+    title: Symbolic Link (Symlink) Attacks
+    description: |
+      File storage services may be vulnerable to symlink attacks, where an attacker
+      creates a symbolic link pointing to sensitive or restricted areas of the file
+      system. Exploiting symlinks can allow unauthorized access or data manipulation.
+    features:
+      - CCC.F11 # Backup
+    mitre_technique:
+      - T1564 # Hide Artifacts
+      - T1574 # Hijack Execution Flow
+      - T1222 # File and Directory Permissions Modification
+
+  - id: CCC.FileStor.TH03
+    title: Improper handling of file locks or race conditions
+    description: |
+       File storage services support file locking mechanisms to manage concurrent
+       access to files. Improper handling of file locks or race conditions can lead
+       to data corruption or unauthorized overwriting of files. 
+    features:
+      - CCC.ObjStor.F09 # Object Modification Locks
+    mitre_technique:
+      - T1027 # Obfuscated Files or Information
+      - T1485 # Data Destruction
+      - T1499 # Endpoint Denial of Service
+      - T1491 # Defacement
+      - T1485 # Data Destruction
