@@ -47,7 +47,7 @@ controls:
       in accordance with the principle of least privilege.
     threats:
       - CCC.TH01 # Access control is misconfigured
-      - CCC.FileStor.TH02 # Improper enforcement of object modification locks
+      - CCC.FileStor.TH03 # Improper enforcement of object modification locks
     nist_csf: PR.AC-4 # Access permissions and authorizations are managed, incorporating the principles of least privilege and separation of duties
     control_mappings:
       CCM:

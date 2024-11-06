@@ -1,0 +1,21 @@
+title: File Storage
+id: CCC.FileStor
+description: |
+    Cloud file storage systems allow users to store, manage, and access their files in the cloud. 
+    It is ideal for applications that require file-based access, such as document management systems, file sharing, and collaboration tools.
+    Typically it is accessed via file system protocols like SMB, NFS, or through APIs nd offer features like file synchronization across devices, 
+    sharing capabilities, version control, and robust security measures.
+release_details:
+  - version: "2024.11"
+    assurance_level: None
+    threat_model_url: None
+    threat_model_author: None
+    red_team: None
+    red_team_exercise_url: None
+    release_manager:
+      name: Georgescu, Vlad
+      github_id: vgeorgescu
+      company: LSEG
+      summary: Initial release
+    change_log:
+        - Add file storage threats, controls, features
