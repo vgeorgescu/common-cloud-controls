@@ -26,7 +26,7 @@ features:
     title: POSIX Compliance
     description: |
       Provides POSIX compliant file system which can be seamlessly used with traditional file based applications.
-  - id: CCC.FileStor.F09 # Object Modification Locks
+  - id: CCC.FileStor.F04 # Object Modification Locks
     title: Object Modification Locks
     description: |
       Allows locking of objects to disable modification and/or deletion of an

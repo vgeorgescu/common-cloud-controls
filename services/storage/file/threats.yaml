@@ -24,7 +24,7 @@ threats:
       exfiltrated or destroyed prematurely, resulting in a loss of availability
       and potential exposure of sensitive data.
     features:
-      - CCC.F11 # Backup
+      - CCC.FileStor.F02 # protocol support
     mitre_technique:
       - T1020 # Automated Exfiltration
       - T1537 # Transfer Data to Cloud Account
@@ -40,7 +40,7 @@ threats:
       creates a symbolic link pointing to sensitive or restricted areas of the file
       system. Exploiting symlinks can allow unauthorized access or data manipulation.
     features:
-      - CCC.F11 # Backup
+      - CCC.FileStor.F03 # POSIX Compliance
     mitre_technique:
       - T1564 # Hide Artifacts
       - T1574 # Hijack Execution Flow
@@ -53,7 +53,7 @@ threats:
        access to files. Improper handling of file locks or race conditions can lead
        to data corruption or unauthorized overwriting of files. 
     features:
-      - CCC.ObjStor.F09 # Object Modification Locks
+      - CCC.FileStor.F04 # Object Modification Locks
     mitre_technique:
       - T1027 # Obfuscated Files or Information
       - T1485 # Data Destruction
