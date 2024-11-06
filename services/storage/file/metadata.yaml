@@ -19,3 +19,19 @@ release_details:
       summary: Initial release
     change_log:
         - Add file storage threats, controls, features
+    contributors:
+      - name: Akin Akinbobola
+        github_id: akinfolarin.akinbobola@lseg.com
+        company: LSEG
+      - name: Pushpika Arangala
+        github_id: push-gh
+        company: LSEG
+      - name: Vlad Georgescu
+        github_id: vgeorgescu
+        company: LSEG
+      - name: Wen He
+        github_id: wen.he@lseg.com
+        company: LSEG
+      - name: Betty Xie
+        github_id: betty.xie@lseg.com
+        company: LSEG
